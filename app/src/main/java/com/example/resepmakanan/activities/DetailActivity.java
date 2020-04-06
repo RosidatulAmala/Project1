@@ -26,8 +26,6 @@ public class DetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 
-        //ini Toolbar nya
-        setupToolbar();
 
         mProgressBar = findViewById(R.id.progress_bar);
         mProgressBar.setMax(100);
@@ -63,12 +61,6 @@ public class DetailActivity extends AppCompatActivity {
 
             }
         });
-    }
-
-    private void setupToolbar() {
-        Toolbar toolbar = findViewById(R.id.tbDetail);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     @Override
